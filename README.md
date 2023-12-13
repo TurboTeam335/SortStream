@@ -1,27 +1,56 @@
 # SortStream
 
-`````source venv/bin/activate`````
+SortStream is a Python script designed to automatically organize files in a directory, particularly useful for managing downloads. It's ideal for users who frequently download various file types and want to keep their workspace organized.
 
-A Python script to automatically sort files in a directory.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Support](#support) 
+- [License](#license)
 
 ## Installation
-* Clone this repository.
 
-* Navigate to the repository directory.
+Requirements:
+* Python 3.x
 
-* Run `````pip install````` . to install the sortstream package and its dependencies.
+Steps:
+1. Clone this repository: `git clone git@github.com:TurboTeam335/SortStream.git`
+
+2. Navigate to the repository directory: `cd sortstream`
+3. Set up a virtual environment (optional but recommended):
+   - Create the virtual environment: `python3 -m venv venv`
+   - Activate the virtual environment:
+     - On macOS and Linux: `source venv/bin/activate`
+     - On Windows: `.\venv\Scripts\activate`
+
+4. Install dependencies: `pip install -r requirements.txt`
 
 ## Usage
-* Navigate to the repository directory.
 
-* Run `````python -m sortstream````` to start the script.
+After installation, ensure your virtual environment is activated. If not, follow the activation steps in the Installation section.
 
-The script will start monitoring the Downloads folder. When a new file is added to the folder, the script will automatically move it to a subfolder based on its file type.
+To run the script, navigate to the repository directory and execute: `python -m sortstream`
+
+
+The script monitors your Downloads folder. New files are automatically categorized and moved to appropriate subfolders based on file type, as configured in `config.py`.
+
+To deactivate the virtual environment when you're finished, simply run: `deactivate`
+
+## Features
+
+* Automatic file sorting by type
+* Customizable file type categorization
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Contributions are welcome! For major changes, please open an issue first to discuss what you'd like to change. Ensure to update tests as appropriate.
+
+## Support
+
+For support, please open an issue on the GitHub repository.
 
 ## License
-MIT [assistant]=(#message|) Your README.md file is well-written and provides clear instructions on how to install and use your project. It’s great that you’ve included a section on contributing and specified the license.
+
+[MIT License](LICENSE) 

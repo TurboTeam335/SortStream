@@ -14,7 +14,7 @@ class TestMyHandler(unittest.TestCase):
     @patch('os.makedirs')
     @patch('shutil.move')
     def test_on_created(self, mock_move, mock_makedirs, mock_exists):
-        mock_event = MockEvent('/Users/Daniel/Downloads/test.mp3')
+        mock_event = MockEvent('~/Downloads/test.mp3')
         mock_exists.return_value = False  # Simulate that the folder does not exist
 
         self.handler.on_created(mock_event)
