@@ -14,8 +14,9 @@ logging.basicConfig(filename=os.path.expanduser('~/Downloads/sortstream.log'), l
 class MyHandler(FileSystemEventHandler):
     def on_created(self, event):
         # Ignore temporary or hidden files
-        if event.src_path.split('/')[-1].startswith('.'):
+        if event.src_path.split('/')[-1].startswith('.') or event.src_path.endswith('.crdownload'):
             return
+        
         # Base folder for sorted files (inside Downloads)
         base_folder = os.path.expanduser('~/Downloads/')
 
