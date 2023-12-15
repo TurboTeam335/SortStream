@@ -5,6 +5,7 @@ SortStream is a Python script designed to automatically organize files in a dire
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Using the Executable](#using-the-Executable)
 - [Features](#features)
 - [Contributing](#contributing)
 - [Support](#support) 
@@ -31,12 +32,33 @@ Steps:
 
 After installation, ensure your virtual environment is activated. If not, follow the activation steps in the Installation section.
 
-To run the script, navigate to the repository directory and execute: `python -m sortstream`
+To run the script, navigate to the repository directory and execute: `python main.py`
 
 
 The script monitors your Downloads folder. New files are automatically categorized and moved to appropriate subfolders based on file type, as configured in `config.py`.
 
 To deactivate the virtual environment when you're finished, simply run: `deactivate`
+
+## Using the Executable
+
+For users who prefer not to install Python and dependencies, a pre-built executable version of SortStream is available.
+
+### Downloading the Executable
+1. Go to the [Releases](https://github.com/TurboTeam335/SortStream/releases) section of the SortStream GitHub repository.
+2. Download the latest release for your operating system.
+3. Unzip the downloaded file.
+
+### Running the Executable
+- On macOS and Linux: 
+  - Open Terminal.
+  - Navigate to the directory containing the unzipped executable.
+  - Run the executable with `./main` (assuming `main` is the executable name).
+- On Windows:
+  - Navigate to the directory containing the unzipped executable in File Explorer.
+  - Double-click the `main.exe` file to run it.
+
+The executable functions just like the Python script, automatically organizing files in the specified directory.
+
 
 ## Features
 
